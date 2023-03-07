@@ -1,0 +1,44 @@
+.btn-p{
+/* Primary btn */
+
+position: relative;
+width: 285px;
+height: 52px;
+left: 120px;
+top: 460px;
+
+background: #FFFFFF;
+
+
+/* Rectangle 1 */
+
+position: relative;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #F46D3C;
+border-radius: 10px;
+
+
+/* Action */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 13.46%;
+bottom: 13.46%;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 22px;
+display: flex;
+align-items: center;
+text-align: center;
+
+/* White */
+color: #FFFFFF;
+}
