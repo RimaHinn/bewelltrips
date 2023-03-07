@@ -1,4 +1,5 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+
   <div class="container-fluid">
     <%= link_to "link_to root_path", class: "navbar-brand" do %>
       <%= image_tag "bewelltrips.png" %>
@@ -9,6 +10,7 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
       <ul class="navbar-nav me-auto">
 
           <li class="nav-item active">
@@ -25,10 +27,18 @@
            <li class="nav-item">
             <%= link_to "About Us", "#", class: "nav-link" %>
           </li>
+      </ul>
+    </div>
 
-          <li class="nav-item">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto">
+
+      <button>
+            <%= link_to "Contact Us", "#", class: "nav-link" %>
+      </button>
+       <li class="nav-item">
             <%= link_to "Login", new_user_session_path, class: "nav-link" %>
-          </li>
+        </li>
 
       </ul>
     </div>

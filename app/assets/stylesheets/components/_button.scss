@@ -1,4 +1,4 @@
-.btn-p{
+.btn-primary{
 /* Primary btn */
 
 position: relative;
@@ -42,3 +42,53 @@ text-align: center;
 /* White */
 color: #FFFFFF;
 }
+
+
+.btn-faded{
+  //  padding: 15px 50px;
+  //  color: F46D3C;
+    /* Primary btn */
+
+    position: relative;
+    width: 285px;
+    height: 52px;
+    left: 120px;
+    top: 460px;
+
+    background: F3F1ED;
+
+
+    /* Rectangle 1 */
+
+    position: relative;
+    left: 5%;
+    right: 0%;
+    top: 60%;
+    bottom: 20%;
+
+    background: F3F1ED;
+    border-radius: 10px;
+
+
+    /* Action */
+
+    position: absolute;
+    left: 5%;
+    right: 0%;
+    top: 60%;
+    bottom: 8%;
+
+    font-family: 'Montserrat';
+    font-style: bold;
+    font-weight: bolder;
+    font-size: 20px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: 746762;
+    // text-align: center;
+    text-indent:  65px;
+
+   }
