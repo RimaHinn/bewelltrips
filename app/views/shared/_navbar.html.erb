@@ -1,41 +1,40 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
 
   <div class="container-fluid">
-    <%= link_to "link_to root_path", class: "navbar-brand" do %>
-      <%= image_tag "bewelltrips.png" %>
-    <% end %>
-
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <div>
+      <%= link_to image_tag("bewelltrips.png"), root_path , class: "navbar-brand"%>
+  </div>
+<%# <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-    </button>
+</button> %>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto">
-
-          <li class="nav-item active">
-            <%= link_to "Destinations", "#", class: "nav-link" %>
-          </li>
-          <li class="nav-item">
-            <%= link_to "Retreat Types", "#", class: "nav-link" %>
-          </li>
-
-           <li class="nav-item">
-            <%= link_to "Past Retreats", "#", class: "nav-link" %>
-          </li>
-
-           <li class="nav-item">
-            <%= link_to "About Us", "#", class: "nav-link" %>
-          </li>
+        <li class="nav-item active">
+          <%= link_to "Destinations", "#", class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Retreat Types", "#", class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Past Retreats", "#", class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "About Us", "#", class: "nav-link" %>
+        </li>
       </ul>
-    </div>
+  </div>
 
+  <div>
+      <button>
+        <%= link_to "Contact Us", "#", class: "nav-link" %>
+      </button>
+  </div>
+  
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto">
 
-      <button>
-            <%= link_to "Contact Us", "#", class: "nav-link" %>
-      </button>
+
        <li class="nav-item">
             <%= link_to "Login", new_user_session_path, class: "nav-link" %>
         </li>

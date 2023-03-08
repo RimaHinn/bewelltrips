@@ -10,9 +10,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_03_07_121723) do
+ActiveRecord::Schema[7.0].define(version: 2023_03_08_160839) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "trip_categories", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "trips", force: :cascade do |t|
+    t.string "name"
+    t.text "description"
+    t.string "address"
+    t.date "start_date"
+    t.date "end_date"
+    t.integer "category_id"
+    t.integer "deposit_pricing"
+    t.integer "double_pricing"
+    t.integer "single_pricing"
+    t.integer "max_participants"
+    t.integer "admin_user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false

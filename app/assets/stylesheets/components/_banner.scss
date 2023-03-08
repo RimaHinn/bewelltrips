@@ -1,10 +1,10 @@
 
 .banner {
-  height: 550px;
-  width: 1440px;
-  left: 0px;
+  height: 400px;
+  width: 1200px;
+  margin: 0 auto;
   top: 142px;
-  border-radius: 0px;
+  border-radius: 10px;
 
   display: flex;
   justify-content: space-around;
@@ -16,9 +16,9 @@
   h1 {
 
     font-family: 'Montserrat', sans-serif;
-    font-weight: boldest;
-    font-size: 55px;
-    font-weight: 650;
+
+    font-size: 38px;
+    font-weight: 400;
     line-height: 60px;
     letter-spacing: 0em;
     text-align: left;
@@ -27,60 +27,19 @@
     font-family: 'Montserrat', cursive;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     opacity: .9;
-    font-size: 35px;
+    font-size: 20px;
     font-weight: light;
-    margin-bottom: 120px;
-    letter-spacing: .5em;
+    margin-bottom: 35px;
+    letter-spacing: 0.5em;
     background-color: white;
   }
   .btn{
-  //  padding: 15px 50px;
-  //  color: F46D3C;
-    /* Primary btn */
-
-    position: relative;
-    width: 285px;
-    height: 52px;
-    left: 120px;
-    top: 460px;
-
-    background: #FFFFFF;
-
-
-    /* Rectangle 1 */
-
-    position: relative;
-    left: 5%;
-    right: 0%;
-    top: 60%;
-    bottom: 20%;
-
-    background: #F46D3C;
-    border-radius: 10px;
-
-
-    /* Action */
-
-    position: absolute;
-    left: 5%;
-    right: 0%;
-    top: 50%;
-    bottom: 8%;
 
     font-family: 'Montserrat';
-    font-style: bold;
-    font-weight: bolder;
-    font-size: 20px;
-    line-height: 22px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-    /* White */
-    color: #FFFFFF;
-
-    // text-align: center;
-    text-indent:  65px;
+    background: #F46D3C;
+    color:#FFFFFF ;
+    border-radius: 10px;
+    font-weight: 800;
 
    }
 }
