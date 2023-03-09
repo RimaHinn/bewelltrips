@@ -1,8 +1,26 @@
-<h1>Add a new Retreat</h1>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-12 col-sm-4">
+
+  <div class="form-retreat">
+
+    <h2>Add a New Retreat</h2>
       <%= simple_form_for @trip do |f| %>
-        <%= f.input :name %>
+        <%= f.input :name%>
         <%= f.input :address %>
-        <%= f.input :description %>
-        <%# <%= f.input :photos, as: :file, input_html: { multiple: true }%>
-        <%= f.submit "Create my Retreat", :class => "button" %>
+        <%= f.input :start_date, as: :date, html5: true %>
+        <%= f.input :end_date, as: :date, html5: true %>
+        <%= f.input :deposit_pricing %>
+        <%= f.input :double_pricing %>
+        <%= f.input :single_pricing %>
+        <%= f.input :max_participants %>
+        <%= f.input :trip_category_id, as: :check_boxes %>
+        <%= f.input :photos, as: :file, input_html: { multiple: true } %>
+        <%= f.submit "Create", :class => "btn" %>
      <% end %>
+
+
+ </div>
+    </div>
+  </div>
+</div>

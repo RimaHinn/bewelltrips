@@ -6,24 +6,11 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto">
-        <li class="nav-item">
-          <%= link_to "Our Story", "#", class: "nav-link" %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "Gallery", "#", class: "nav-link" %>
-        </li>
-        <li class="nav-item active">
-          <%= link_to "Destinations", "#", class: "nav-link" %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "Categories", "#", class: "nav-link" %>
-        </li>
+
       </ul>
     </div>
     <div>
-      <button>
-        <%= link_to "Contact Us", "#", class: "nav-link" %>
-      </button>
+
   </div>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,8 +26,12 @@
              <li class="nav-item dropdown">
             <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-              <%= link_to "Action", "#", class: "dropdown-item" %>
-              <%= link_to "Another action", "#", class: "dropdown-item" %>
+              <%= link_to "Retreat Manager",  new_trip_path, class: "dropdown-item" %>
+              <%= link_to "Our Story", "#", class: "dropdown-item" %>
+              <%= link_to "Gallery", "#", class: "dropdown-item" %>
+              <%= link_to "Destinations", "#", class: "dropdown-item" %>
+              <%= link_to "Categories", "#", class: "dropdown-item" %>
+               <%= link_to "Contact Us", "#", class: "dropdown-item" %>
               <%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete}, class: "dropdown-item" %>
             </div>
           </li>
