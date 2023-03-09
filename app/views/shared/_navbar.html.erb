@@ -10,34 +10,49 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto">
-        <li class="nav-item active">
+
+        <li class="nav-item">
+          <%= link_to "Our Story", "#", class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Gallery", "#", class: "nav-link" %>
+        </li>
+          <li class="nav-item active">
           <%= link_to "Destinations", "#", class: "nav-link" %>
         </li>
         <li class="nav-item">
-          <%= link_to "Retreat Types", "#", class: "nav-link" %>
+          <%= link_to "Categories", "#", class: "nav-link" %>
         </li>
-        <li class="nav-item">
-          <%= link_to "Past Retreats", "#", class: "nav-link" %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "About Us", "#", class: "nav-link" %>
-        </li>
-      </ul>
-  </div>
 
-  <div>
+      </ul>
+
+    </div>
+
+
+    <div>
+
       <button>
         <%= link_to "Contact Us", "#", class: "nav-link" %>
       </button>
   </div>
-  
+
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto">
+       <% if user_signed_in? %>
 
-
-       <li class="nav-item">
-            <%= link_to "Login", new_user_session_path, class: "nav-link" %>
+        <li>
+          <%= link_to "Log out", destroy_user_session_path,class: "nav-link"%>
         </li>
+
+      </div>s
+        <% else %>
+          <li class="nav-item">
+            <%= link_to "Login", new_user_session_path, class: "nav-link" %>
+          </li>
+        <% end %>
+       <%# <li class="nav-item">
+            <%= link_to "Login", new_user_session_path, class: "nav-link" %>
+        <%# </li> %>
 
       </ul>
     </div>
