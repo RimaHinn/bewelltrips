@@ -26,14 +26,16 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_08_160839) do
     t.string "address"
     t.date "start_date"
     t.date "end_date"
-    t.integer "category_id"
+    t.bigint "trip_category_id"
     t.integer "deposit_pricing"
     t.integer "double_pricing"
     t.integer "single_pricing"
     t.integer "max_participants"
-    t.integer "admin_user_id"
+    t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["trip_category_id"], name: "index_trips_on_trip_category_id"
+    t.index ["user_id"], name: "index_trips_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
