@@ -6,7 +6,6 @@ class CreateTrips < ActiveRecord::Migration[7.0]
       t.string :address
       t.date :start_date
       t.date :end_date
-      t.references :trip_category
       t.integer :deposit_pricing
       t.integer :double_pricing
       t.integer :single_pricing

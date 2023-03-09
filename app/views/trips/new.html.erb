@@ -14,7 +14,7 @@
         <%= f.input :double_pricing %>
         <%= f.input :single_pricing %>
         <%= f.input :max_participants %>
-        <%= f.input :trip_category_id, as: :check_boxes %>
+        <%= f.input :category, collection: Trip::CATEGORIES, input_html: { multiple: true }, as: :check_boxes %>
         <%= f.input :description %>
         <%= f.input :photos, as: :file, input_html: { multiple: true } %>
         <%= f.submit "Create", :class => "btn" %>

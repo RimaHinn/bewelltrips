@@ -63,7 +63,7 @@ class TripsController < ApplicationController
                                  :single_pricing,
                                  :max_participants,
                                  :description,
-                                 :trip_category_id,
+                                 category: [],
                                  photos: [])
   end
 end
