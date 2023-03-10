@@ -48,6 +48,14 @@ class TripsController < ApplicationController
     @user_trips = Trip.where(user: current_user)
   end
 
+  def destinations
+    @trips = Trip.all
+  end
+
+  def categories
+    @trips = Trip.all
+  end
+
   private
 
   def set_trip
