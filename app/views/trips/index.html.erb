@@ -1,0 +1,26 @@
+
+<div class="form-retreat-list">
+  <h2>Retreat Destinations</h2>
+</div>
+
+<ul class="cards">
+
+<% @trips.each do |t| %>
+  <%= link_to trip_path(t) do %>
+    <div class="card-trip">
+      <% if t.photos.attached? %>
+        <%= cl_image_tag t.photos.first.key %>
+      <% else %>
+        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg">
+      <% end %>
+        <div class="card-trip-infos">
+          <div>
+            <h2><%= t.name %></h2>
+            <p><%= t.name %></p>
+          </div>
+          <h2 class="card-trip-pricing"><%= "€#{t.double_pricing}"%></h2>
+        </div>
+    </div>
+  <% end %>
+<% end %>
+</ul>
