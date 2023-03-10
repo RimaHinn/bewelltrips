@@ -3,5 +3,5 @@ class Trip < ApplicationRecord
 
   has_many_attached :photos
 
-  CATEGORIES = ["Hiking", "Yoga", "Nutrition", "Medical Spa", "Spa", "Fitness"]
+  CATEGORIES = ["Ayurveda", "Hiking", "Yoga", "Meditation", "Nutrition", "Medical Spa", "Spa", "Fitness", "General Wellness"]
 end
