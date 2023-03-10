@@ -1,0 +1,30 @@
+<div class="container">
+
+<div class="form_retreat">
+  <h1>
+   <i class="bi bi-chevron-compact-left"></i>
+    <%= @trip.name %>
+  </h1>
+  <p><%= @trip.address%></p>
+</div>
+<div class="form_retreat">
+  <div class="d-flex img-grid-wrapper">
+    <div class="trip-img-grid img-grid-big w-50 me-2" style="background-image: url(<%= cl_image_path @trip.photos.first.key %>)"></div>
+    <div class="w-50 img-grid-small">
+      <% @trip.photos.drop(1).each do |photo| %>
+        <div class="trip-img-grid w-100 h-100" style="background-image: url(<%= cl_image_path photo.key %>)"></div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+
+<div class="form_retreat">
+  <p><%= @trip.description %></p>
+</div>
+<div class="form_retreat">
+<h4> € <strong><%= @trip.deposit_pricing%></strong></h4>
+</div>
+
+
+</div>

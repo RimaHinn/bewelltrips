@@ -1,0 +1,20 @@
+
+  <h1><%= @trip.name %></h1>
+
+
+<div class="container">
+  <div class="row", class="row justify-content-center">
+    <% @trip.photos.each do |photo| %>
+      <div class="col-lg-3">
+        <%= cl_image_tag photo.key, class: "img-fluid m-2",width: 300, height: 300,crop: :fill, class: "rounded-4"%>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<div>
+  <p><%= @trip.address%></p>
+  <p><%= @trip.start_date%></p>
+  <p><%= @trip.end_date%></p>
+  <p><%= @trip.description%></p>
+</div>
