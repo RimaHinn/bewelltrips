@@ -11,11 +11,11 @@ Trip.destroy_all
 puts "Deleting categories"
 Category.destroy_all
 
-puts "Creating categories"
-Category.create(name: "Hiking")
-Category.create(name: "Yoga")
-Category.create(name: "Nutrition")
-Category.create(name: "Medical Spa")
-Category.create(name: "Spa")
-Category.create(name: "Fitness")
-puts "Categories created"
+# puts "Creating categories"
+# Category.create(name: "Hiking")
+# Category.create(name: "Yoga")
+# Category.create(name: "Nutrition")
+# Category.create(name: "Medical Spa")
+# Category.create(name: "Spa")
+# Category.create(name: "Fitness")
+# puts "Categories created"
