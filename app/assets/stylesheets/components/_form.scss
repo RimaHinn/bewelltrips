@@ -58,7 +58,6 @@
   }
 }
 
-
 .form-retreat-list {
 
   background: white;
@@ -158,5 +157,47 @@
     border-radius: 10px;
     font-weight: 800;
 
+  }
+}
+
+.form-retreat-home {
+
+  background-image:image-url("backgroundimage.svg");
+  position: absolute;
+  height: 38%;
+  width: 100%;
+  -ms-flex-align: center;
+
+  h2 {
+    font-family: 'Montserrat';
+    color:   #5d5b5a;
+    font-size: 35px;
+    font-weight: bold;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: center;
+    background: #FFFFFF;
+  }
+  .btn {
+    font-family: 'Montserrat';
+    position: center;
+    margin-bottom: 50px;
+    font-family: 'Montserrat';
+    background: #FFFFFF;
+    color:#F46D3C ;
+    font-style: bold ;
+    border-color: #F46D3C ;
+    border-radius: 10px;
+
+  }
+  p {
+    font-family: 'Montserrat';
+    color:  #5d5b5a;
+    font-size: 20px;
+    font-weight: bold;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: center;
+    background:white ;
   }
 }

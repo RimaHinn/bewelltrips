@@ -27,10 +27,10 @@
         <%= f.input :single_pricing, label:"Single Accommodations Pricing:" %>
         <%= f.input :max_participants, label:"Maximum Number of Participants:" %>
 
-        <%= f.input :category, label:"Categories:", collection: Trip::CATEGORIES, input_html: { multiple: true }, as: :check_boxes %>
+        <%= f.input :categories, label: "Categories:", collection: Trip::CATEGORIES, input_html: { multiple: true }, as: :check_boxes %>
         <%= f.input :description, label:"Retreat Description:" %>
         <%= f.input :photos, as: :file, input_html: { multiple: true } %>
-        <%= f.submit "Create Retreat", :class => "btn" %>
+        <%= f.submit "Create Retreat", class: "btn" %>
      <% end %>
 
 

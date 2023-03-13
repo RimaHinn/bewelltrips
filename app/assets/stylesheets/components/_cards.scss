@@ -1,59 +1,99 @@
-.cards-container {
-  display: flex;
-}
+ .cards-container {
+   display: flex;
+   justify-content: space-around;
 
-.card {
+ }
+
+ .cards {
+  // display: grid;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  justify-content: space-between;
+  // flex-direction: column;
+  // justify-content: center;
+
+  a:hover {
+   color: grey;
+  }
+}
+// .cards-container {
+//   display: flex;
+//   background-image:image-url("bkg.svg");
+//   // justify-content: center;
+//   justify-content: column;
+// }
+.showcard-listing-image {
+  min-height: 240px;
+  background-color: #F7F7F7;
+  border-radius: 2px;
   background-size: cover;
-  background-position: center;
-  height: 150px;
-  border-radius: 1px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  width: 100%;
+  overflow: hidden;
+}
+
+.card-img {
+  height: 350px;
+  width: 100px;
+  // background-position: top;
+  // object-fit: cover;
+}
+
+.card-content {
+  padding: 16px;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  font-size: 22px;
-  color: white;
-  font-weight: bolder;
-  text-shadow: 0 0 10px rgba(0,0,0,0.7);
-}
-
-
-.cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 16px;
-  // gap: 10px;
-  // row-gap: 10px;
-  column-gap: 5px;
-  margin-top: 10px;
-}
+  flex-direction: row;
+  width: 100%;
+  }
 
 .card-trip {
   overflow: hidden;
   background: white;
   box-shadow: 0 0 5px rgba(0,0,0,0.2);
-  height: 270px;
-  width: 350px;
-  border-radius: 15px;
+  // height: 500px;
+  // width: 400px;
+  border-radius: 5px;
+  // min-height: 240px;
+  background-color: #F7F7F7;
+  background-size: cover;
+  overflow: hidden;
+  margin-bottom: 25px;
+
 }
 
 .card-trip > img {
-  height: 200px;
+  height: 100%;
   width: 100%;
-  object-fit: cover;
+  object-fit: top;
+
 }
 
 .card-trip h2 {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
-  margin: 0;
+  margin: 5;
+  margin-left: 5;
+  text-decoration: none;
+  background-color: white;
+  border-color:  #524e4e;
+  border-width: 5px;
+  border-color: #524e4e;
+  color: #524e4e;
+}
+
+.card-trip h4 {
+  font-size: 12px;
+  font-weight: bold;
+  margin: 5;
+  margin-left: 5;
   text-decoration: none;
 }
 
 .card-trip p {
   font-size: 12px;
   opacity: .7;
-  margin: 0;
+  margin: p;
 }
 
 
@@ -71,20 +111,32 @@
   top: -20px;
   width: 40px;
 }
-
 a {
   color: rgb(8, 8, 8);
   text-decoration: none;
 }
 
 .card-trip-pricing {
-  height: 40px;
+  height: 10px;
 }
 
-.events-cards {
+.trip-cards {
   display: flex;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 5px;
-  padding-left: 5px;
+  // grid-template-columns: 1fr 1fr;
+  min-height: 240px;
+  background-color: #F7F7F7;
+  border-radius: 2px;
+  background-size: cover;
+  width: 100%;
+
+  overflow: hidden;
+  grid-gap: 20px;
+  padding-left: 10px;
+}
+
+.topic-categories-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }

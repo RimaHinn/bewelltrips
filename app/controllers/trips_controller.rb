@@ -20,6 +20,9 @@ class TripsController < ApplicationController
   def create
     @trip = Trip.new(trip_params)
     @trip.user = current_user
+    # Removes the empty item ("") being sent by simple form
+    @trip.categories = @trip.categories.select(&:present?)
+
     if @trip.save
       redirect_to trip_path(@trip)
     else
@@ -56,6 +59,10 @@ class TripsController < ApplicationController
     @trips = Trip.all
   end
 
+  def list
+    @trips = Trip.all
+  end
+
   private
 
   def set_trip
@@ -71,7 +78,7 @@ class TripsController < ApplicationController
                                  :single_pricing,
                                  :max_participants,
                                  :description,
-                                 category: [],
+                                 categories: [],
                                  photos: [])
   end
 end
