@@ -3,10 +3,13 @@
   background-image:image-url("bkg.svg");
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 20%;
+  // border-radius: 20%;
   justify-content: space-around;
   margin-left: 100px;
   margin-right: 100px;
+  width: 100vw;
+  height: 100vh;
+
 
   h2{
     font-family: 'Caveat';
@@ -17,16 +20,13 @@
 
 .flex-container {
   display: flex;
-  background-image:image-url("cover.svg");
-  background-position: center;
+  background-image: image-url("cover.svg");
+  background-position: bottom;
+  background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 50%;
   justify-content: space-around;
-  min-height: 80vh;
-  flex: 1;
-
-  margin-left: 100px;
-  margin-right: 100px;
+  width: 100vw;
+  height: calc(100vh - 106px);
   // margin-top: 5px;
   // margin-bottom: auto;
 
@@ -38,7 +38,7 @@
   font-style: bold;
   font-size: 20;
    border: 5px outset coral;
-   background-color: #F46D3C;
+   background-color: coral;
    color: white;
    border-radius: 10px;
    font-weight: 800;

@@ -5,8 +5,8 @@
 <div class="cards-container">
 
   <div class="row justify-content-center">
-  <div class="col-9">
-  <div class="trip-cards">
+  <div class="col-11 col-md-8 col-lg-6">
+  <div class="trip-cards my-2">
   <% @trips.each do |trip| %>
     <%= link_to trip_path(trip) do %>
       <div class="card-trip">
@@ -21,7 +21,7 @@
             <p>Overview:<%= trip.description %></p>
             <%= trip.categories.join(" | ")%>
           </div>
-          
+
         </div>
       </div>
     <% end %>

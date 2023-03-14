@@ -11,12 +11,17 @@
 </div>
 
 <div class="retreat-info-container justify-content-left">
-  <h1><%= @trip.name %></h1>
+  <h2><%= @trip.name %></h2>
 </div>
 
 <div class="retreat-info-container">
- <h4> <i class="fa-solid fa-location-dot"></i> <%= @trip.address %></h4>
+ <p> <i class="fa-solid fa-location-dot"></i> <%= @trip.address %></p>
 </div>
+
+<div class="retreat-info-container justify-content-right">
+ <h5><%= @trip.categories.join(" | ")%></h5>
+</div>
+
 
 <div class="retreat-info-container">
  <p> <i class="fa-solid fa-calendar-days"></i>
@@ -25,9 +30,4 @@
 
 <div class="retreat-info-container">
  <p><strong>Overview: </strong><br><%= @trip.description %></p>
-</div>
-
-
-<div class="retreat-info-container justify-content-center">
- <p><%= @trip.categories.join(" | ")%></p>
 </div>
