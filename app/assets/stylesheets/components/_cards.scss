@@ -128,3 +128,35 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
 }
+
+.image-grid-container {
+  display: flex;
+  // border-radius: 50%;
+  justify-content: center;
+  flex-direction: row;
+  margin: 10px;
+  border-color: #524e4e;
+  border-width: 1px;
+  border-style: dotted;
+  border-radius: 20%;
+}
+
+.image-grid-item {
+  width: 200px;
+  height: 200px;
+  // height: auto;
+  object-fit: cover;
+  margin: 15px;
+  border-radius: 10%;
+}
+
+.retreat-info-container{
+  display: flex;
+  // border-radius: 50%;
+  justify-content: left;
+  flex-direction: row;
+  // min-height: 80vh;
+  // flex: 1;
+  margin: 5px;
+
+}

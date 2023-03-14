@@ -1,31 +1,33 @@
 
-<div class="form-retreat-show">
-  <h2><%= @trip.name %></h2>
-</div>
 
-<div class="container">
-  <div class="row", class="row justify-content-center">
+<div class="image-grid-container">
+
+  <div class="row justify-content-center">
+
     <% @trip.photos.each do |photo| %>
-      <div class="col-lg-3">
-        <%= cl_image_tag photo.key, class: "img-fluid m-2",width: 300, height: 300,crop: :fill, class: "rounded-4"%>
-      </div>
+        <%= cl_image_tag photo.key,  class:"image-grid-item"%>
     <% end %>
   </div>
 </div>
 
+<div class="retreat-info-container justify-content-left">
+  <h1><%= @trip.name %></h1>
+</div>
 
-<div class="form-retreat-show">
-  <h6><%= @trip.address %> Retreat  </h6>
- <p> Start Date: <%= @trip.start_date%> </p>
-  <p>End Date: <%= @trip.end_date%> </p>
-   <p><%= @trip.description %></p>
+<div class="retreat-info-container">
+ <h4> <i class="fa-solid fa-location-dot"></i> <%= @trip.address %></h4>
+</div>
 
+<div class="retreat-info-container">
+ <p> <i class="fa-solid fa-calendar-days"></i>
+ <strong>From: </strong> <%= @trip.start_date%> <strong>To: </strong><%= @trip.end_date%> </p>
+</div>
 
-
+<div class="retreat-info-container">
+ <p><strong>Overview: </strong><br><%= @trip.description %></p>
 </div>
 
 
-
-
-
+<div class="retreat-info-container justify-content-center">
+ <p><%= @trip.categories.join(" | ")%></p>
 </div>
