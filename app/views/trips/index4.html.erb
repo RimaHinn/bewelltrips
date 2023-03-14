@@ -1,0 +1,51 @@
+<%# <div class="form-retreat-list">
+  <h2>Upcoming Retreats</h2>
+</div> %>
+
+<div container>
+  <div class="row">
+    <div class="col-12 col-md-6 col-lg-4">
+      <% @trips.each do |t| %>
+      <%= link_to trip_path(t) do %>
+        <div class="card">
+          <% if t.photos.attached? %>
+            <%= cl_image_tag t.photos.first.key %>
+          <% else %>
+            <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+          <% end %>
+           <div class="card-body">
+                <div class="card-title">
+                  <h2><%= t.name %></h2>
+                </div>
+                <div class="card-text">
+                  <h2><%= t.description %></h2>
+                </div>
+          </div>
+        </div>
+     </div>
+  </div>
+</div>
+<%# <div class="cards row"> %>
+  <%# <div class="col-12 col-md-6 col-lg-4"> %>
+  <% @trips.each do |t| %>
+    <%= link_to trip_path(t) do %>
+      <%# <div class="card-trip"> %>
+        <% if t.photos.attached? %>
+          <%= cl_image_tag t.photos.first.key %>
+        <% else %>
+          <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+        <% end %>
+        <div class="card-trip-infos">
+          <div>
+            <h2><%= t.name %></h2>
+            <h4 class="card-trip-pricing">
+              <%="$#{t.double_pricing}"%>-<%="$#{t.double_pricing}"%>
+            </h4>
+            <p>Overview:<%= t.description %></p>
+            <%= t.categories.join(" | ")%>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+  </div>

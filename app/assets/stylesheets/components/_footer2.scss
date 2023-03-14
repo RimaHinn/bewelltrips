@@ -1,0 +1,24 @@
+
+.footer {
+
+  width: 100%;
+  height: 50px;
+  background: #F46D3C;
+  color: white;
+  min-height: 50px;
+  text-align: center;
+  position: bottom;
+
+  // box-shadow: none;
+  .footer-wagon-link {
+    color: lightblue;
+    font-weight: bold;
+
+  }
+  .img {
+    color:white;
+  }
+  .footer-copyright {
+    color: white;
+  }
+}

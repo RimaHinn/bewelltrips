@@ -1,16 +1,30 @@
+.flex-container-home {
+  display: flex;
+  background-image:image-url("bkg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20%;
+  justify-content: space-around;
+  margin-left: 100px;
+  margin-right: 100px;
+
+  h2{
+    font-family: 'Caveat';
+    font-size: 25 ;
+    color: rgba(0, 0, 0, 0.506);
+  }
+}
+
 .flex-container {
   display: flex;
   background-image:image-url("cover.svg");
-  // background-size:cover;
   background-position: center;
-  // background-size: auto;
   background-repeat: no-repeat;
-  border-radius: 50px;
-
+  border-radius: 50%;
   justify-content: space-around;
 
-  margin-left: 45px;
-  margin-right: 45px;
+  margin-left: 100px;
+  margin-right: 100px;
   // margin-top: 5px;
   // margin-bottom: auto;
 
@@ -20,14 +34,14 @@
   .btn{
   font-family: 'Montserrat';
   font-style: bold;
-  font-size: 20 ;
+  font-size: 20;
    border: 5px outset coral;
    background-color: #F46D3C;
    color: white;
    border-radius: 10px;
    font-weight: 800;
-   height:120px;
-   width: 120px;
+   height:100px;
+   width: 100px;
    cursor:pointer;
    margin-top: 200px;
    margin-bottom: 200px;

@@ -2,6 +2,8 @@ class TripsController < ApplicationController
   before_action :set_trip, only: %i[show edit destroy]
 
   def index
+    @fallback_image = 'https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg'
+
     if params[:query].present?
       @trips = Trip.where("name ILIKE :query OR address ILIKE :query OR description ILIKE :query", query: "%#{params[:query]}%")
     else

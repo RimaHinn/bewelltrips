@@ -2,24 +2,21 @@
   <h2>Upcoming Retreats</h2>
 </div>
 
-<div class="cards row">
-  <div class="col-12 col-md-6 col-lg-4">
-  <% @trips.each do |t| %>
-    <%= link_to trip_path(t) do %>
+<div class="cards-container">
+  <div class="trip-cards">
+  <% @trips.each do |trip| %>
+    <%= link_to trip_path(trip) do %>
       <div class="card-trip">
-        <% if t.photos.attached? %>
-          <%= cl_image_tag t.photos.first.key %>
-        <% else %>
-          <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
-        <% end %>
+        <div class="card-trip-image" style="background-image: url('<%= trip.photos.attached? ? cl_image_path(trip.photos.first.key) : @fallback_image %>')">
+        </div>
         <div class="card-trip-infos">
           <div>
-            <h2><%= t.name %></h2>
+            <h2><%= trip.name %></h2>
             <h4 class="card-trip-pricing">
-              <%="$#{t.double_pricing}"%>-<%="$#{t.double_pricing}"%>
+              <%="$#{trip.double_pricing}"%>-<%="$#{trip.double_pricing}"%>
             </h4>
-            <p>Overview:<%= t.description %></p>
-            <%= t.categories.join(" | ")%>
+            <p>Overview:<%= trip.description %></p>
+            <%= trip.categories.join(" | ")%>
           </div>
         </div>
       </div>
