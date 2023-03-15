@@ -1,24 +1,20 @@
 
-  <div class="flex-container home-container">
+  <div class="d-flex flex-container justify-content-evenly flex-column align-items-center">
 
-    <div class="flex-item">
-      <%= link_to trips_path, class: "btn d-flex flex-column btn-home" do %>
-        <span>Attend Trip</span>
-        <div class="d-flex align-items-center justify-content-center flex-grow-1">
-          <i class="fa-solid fa-spa fa-2xl"></i>
-        </div>
+    <%= link_to trips_path, class: "btn d-flex flex-column" do %>
+      <span>Attend Trip</span>
+      <div class="d-flex align-items-center justify-content-center flex-grow-1">
+        <i class="fa-solid fa-spa fa-2xl"></i>
+      </div>
+    <% end %>
+
+    <div class="search_bar d-flex search-location">
+      <%= form_with url: trips_path, method: :get, class: "d-flex flex-grow-1 mx-4" do %>
+        <%= text_field_tag :query,
+        params[:query],
+        class: "form-control flex-grow-1 me-2",
+        placeholder: "Where would you like to go?"%>
+        <%= submit_tag "Go", class: "btn-simple"%>
       <% end %>
     </div>
-    <div class="flex-item">
-        <div class= "search_bar search_bar_home d-flex justify-content-left">
-            <%= form_with url: trips_path, method: :get, class: "d-flex" do %>
-            <%= text_field_tag :query,
-            params[:query],
-            class: "form-control",
-            placeholder: "Where to ?"%>
-            <%= submit_tag "Go", class: "btn-simple"%>
-            <% end %>
-        </div>
-     </div>
-
   </div>

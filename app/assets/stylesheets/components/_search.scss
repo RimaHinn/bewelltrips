@@ -1,6 +1,10 @@
 .search_bar {
-  width: 320px;
+  width: 300px;
   border-radius: 10px;
+}
+
+.search-location {
+  width: 50%;
 }
 
 .search_bar_home {
@@ -13,6 +17,10 @@
     position: relative;
     top: 34vh;
     left: 8vw;
+  }
+
+  .search-location {
+    width: 100%;
   }
 }
 
