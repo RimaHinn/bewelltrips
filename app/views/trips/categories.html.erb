@@ -2,6 +2,36 @@
   <h2>Trip Categories</h2>
 </div>
 
+
+<div class="form-retreat-manager justify-content-center  d-flex flex-space-around" >
+
+   <%= link_to categories_path, class: "btn-dashboard d-flex flex-column" do %>
+      <span>Yoga</span>
+      <div class="d-flex align-items-center justify-content-center flex-grow-1">
+         <i class="fa-solid fa-spa fa-2xl"></i>
+      </div>
+    <% end %>
+    <%= link_to categories_path, class: "btn-dashboard d-flex flex-column" do %>
+      <span>Hiking</span>
+      <div class="d-flex align-items-center justify-content-center flex-grow-1">
+        <i class= "fa-solid fa-person-hiking fa-2xl"></i>
+      </div>
+    <% end %>
+    <%= link_to categories_path, class: "btn-dashboard d-flex flex-column" do %>
+      <span>Biking</span>
+      <div class="d-flex align-items-center justify-content-center flex-grow-1">
+        <i class="fa-solid fa-person-biking fa-2xl"></i>
+      </div>
+    <% end %>
+     <%= link_to categories_path, class: "btn-dashboard d-flex flex-column" do %>
+      <span>Fitness</span>
+      <div class="d-flex align-items-center justify-content-center flex-grow-1">
+        <i class="fa-solid fa-heart-pulse fa-2xl"></i>
+      </div>
+    <% end %>
+
+ </div>
+
 <div class="cards-container">
   <div class="flex-item justify-content-right">
         <div class= "search_bar d-flex flex-column">
@@ -9,9 +39,12 @@
             <%= text_field_tag :query,
             params[:query],
             class: "form-control",
-            placeholder: "What type of trip would you like ?"%>
+            placeholder: "What type of trip ?"%>
             <%= submit_tag "Go", class: "btn-simple"%>
             <% end %>
         </div>
   </div>
+
+
+
  </div>
