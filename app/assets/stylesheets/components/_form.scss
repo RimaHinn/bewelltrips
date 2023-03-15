@@ -108,18 +108,19 @@
 
   background: white;
   padding: 10px 10px;
-  margin-top: 10px;
-  border-radius: 10px;
+  margin-top: 15px;
+  border-radius: 0px 0px 10px 10px;
   box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
   h2 {
     font-family: 'Montserrat';
     color:#F46D3C;
-    font-size: 35px;
+
+    font-size: 24px;
     font-weight: bold;
     font-weight: 600;
     margin-bottom: 10px;
     text-align: center;
-    background: rgb(242, 236, 232);
+    background: white;
   }
   .btn {
     font-family: 'Montserrat';
@@ -241,12 +242,12 @@
     font-style: bold;
     font-size: 20;
     border: 5px outset whitesmoke;
-    background-color: rgb(217, 210, 210);
+    background-color: white;
     color: #F46D3C;
     border-radius: 10px;
     font-weight: 800;
-    height:100px;
-    width: 100px;
+    height:90px;
+    width: 90px;
     cursor:pointer;
   }
    .btn-categories:hover {

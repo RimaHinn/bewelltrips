@@ -1,9 +1,10 @@
+<div class= "container">
 
 <div class="form-retreat-list">
-  <h2>Trip Destinations</h2>
+  <h2>Destinations</h2>
 </div>
 
-<div class="cards-container">
+<div class="cards-container my-4">
   <div class="flex-item justify-content-right">
         <div class= "search_bar d-flex flex-column">
             <%= form_with url: trips_path, method: :get, class: "d-flex" do %>
@@ -16,28 +17,33 @@
         </div>
   </div>
  </div>
+<div class="cards-container">
 
 
-<ul class="cards">
-<div class="row justify-content-center">
-<div class="col-11 col-md-8 col-lg-6">
-<% @trips.each do |trip| %>
-  <%= link_to trip_path(trip) do %>
-    <div class="card-trip">
-      <% if trip.photos.attached? %>
-        <%= cl_image_tag trip.photos.first.key %>
-      <% else %>
-        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg">
-      <% end %>
+  <div class="row justify-content-center">
+  <div class="col-11 col-md-8 col-lg-6">
+  <div class="trip-cards my-2">
+  <% @trips.each do |trip| %>
+    <%= link_to trip_path(trip) do %>
+      <div class="card-trip">
+        <div class="card-trip-image" style="background-image: url('<%= trip.photos.attached? ? cl_image_path(trip.photos.first.key) : @fallback_image %>')">
+        </div>
         <div class="card-trip-infos">
           <div>
             <h2><%= trip.name %></h2>
+            <h4 class="card-trip-pricing">
+              <%="$#{trip.double_pricing}"%>-<%="$#{trip.single_pricing}"%>
+            </h4>
+            <p>Overview:<%= trip.description %></p>
+            <%= trip.categories.join(" | ")%>
           </div>
-          <%# <h2 class="card-trip-pricing"><%= "€#{t.double_pricing}"%></h2>
+
         </div>
-    </div>
+      </div>
+    <% end %>
   <% end %>
-<% end %>
-</ul>
+  </div>
 </div>
-</div>
+  </div>
+  </div>
+  </div>

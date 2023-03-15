@@ -1,20 +1,12 @@
 
-
   <div class="d-flex flex-container justify-content-evenly flex-column align-items-center">
 
-   <div class="banner d-flex flex-column">
-      <div class="banner-content">
-
-          <h1> Wellness Experiences </h1>
-          <h2> Around the World</h2>
-          
-           <div>  <p class="typewriter" > Join our next Wellness Trip...</p>   </div>
-
+    <%= link_to trips_path, class: "btn d-flex flex-column" do %>
+      <span>Attend Trip</span>
+      <div class="d-flex align-items-center justify-content-center flex-grow-1">
+        <i class="fa-solid fa-spa fa-2xl"></i>
       </div>
-
-  </div>
-
-
+    <% end %>
 
     <div class="search_bar d-flex search-location">
       <%= form_with url: trips_path, method: :get, class: "d-flex flex-grow-1 mx-4" do %>
