@@ -2,8 +2,8 @@
 
 <div class="container">
 
-<div class="form-retreat-list">
-  <h2>Retreat Manager Dashboard</h2>
+<div class="form-retreat-manager">
+  <h2>Retreat Admin Dashboard</h2>
 </div>
   <div class="row justify-content-center">
     <div class="col-12 col-sm-4">
@@ -28,7 +28,7 @@
         <%= f.input :categories, label: "Activity Types:", collection: Trip::CATEGORIES, input_html: { multiple: true }, as: :check_boxes %>
         <%= f.input :description, label:"Retreat Description:" %>
         <%= f.input :photos, as: :file, input_html: { multiple: true } %>
-        <%= f.submit "Create Retreat", class: "btn" %>
+        <%= f.submit "Create Retreat", class: "btn-admin" %>
      <% end %>
  </div>
     </div>

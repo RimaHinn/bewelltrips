@@ -1,6 +1,17 @@
-
 <div class="form-retreat-list">
-  <h2>Retreat Categories</h2>
+  <h2>Trip Categories</h2>
 </div>
 
-
+<div class="cards-container">
+  <div class="flex-item justify-content-right">
+        <div class= "search_bar d-flex flex-column">
+            <%= form_with url: trips_path, method: :get, class: "d-flex" do %>
+            <%= text_field_tag :query,
+            params[:query],
+            class: "form-control",
+            placeholder: "What type of trip would you like ?"%>
+            <%= submit_tag "Go", class: "btn-simple"%>
+            <% end %>
+        </div>
+  </div>
+ </div>

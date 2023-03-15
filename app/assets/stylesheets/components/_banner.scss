@@ -53,8 +53,27 @@
     background-color: white;
     color: coral;
  }
-
-
+ .btn-simple
+ {
+  font-family: 'Montserrat';
+  font-style: bold;
+  font-size: 20;
+   border: 5px outset coral;
+   background-color: coral;
+   color: white;
+   border-radius: 10px;
+   font-weight: 800;
+  //  height:100px;
+  //  width: 100px;
+   cursor:pointer;
+  //margin-top: 500px;
+  //  margin-bottom: 200px;
+  }
+   .btn-simple:hover {
+    // background-color: lightblue;
+    background-color: white;
+    color: coral;
+ }
  .btn-round{
   font-family: 'Montserrat';
   font-style: bold;

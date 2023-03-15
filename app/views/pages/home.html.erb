@@ -9,5 +9,16 @@
         </div>
       <% end %>
     </div>
+    <div class="flex-item">
+        <div class= "search_bar d-flex justify-content-left">
+            <%= form_with url: trips_path, method: :get, class: "d-flex" do %>
+            <%= text_field_tag :query,
+            params[:query],
+            class: "form-control",
+            placeholder: "Where would you like to go?"%>
+            <%= submit_tag "Go", class: "btn-simple"%>
+            <% end %>
+        </div>
+     </div>
 
   </div>
