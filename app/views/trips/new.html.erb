@@ -7,35 +7,27 @@
   <h2>Retreat Admin Dashboard</h2>
 </div>
 
-<div class="form-retreat">
+<div class="form-retreat-manager justify-content-center  d-flex flex-space-around" >
 
-    <div>
-      <%= link_to new_trip_path, class: "btn-admin-menu d-flex flex-row" do %>
-        <span>list trips</span>
-        <div class="d-flex align-items-center justify-content-center flex-grow-1">
-          <i class="fa-solid fa-spa fa-2xl"></i>
-        </div>
-      <% end %>
-    </div>
-
-    <div>
-      <%= link_to new_trip_path, class: "btn-admin-menu d-flex flex-row" do %>
-      <span>Edit Trip</span>
+   <%= link_to new_trip_path, class: "btn-dashboard d-flex flex-column" do %>
+      <span>All Trips</span>
       <div class="d-flex align-items-center justify-content-center flex-grow-1">
-
-       <i class= "fa-solid fa-list-check fa-2xl" ></i>
+         <i class="fa-solid fa-list-check fa-2xl"></i>
       </div>
-      <% end %>
-    </div>
-     <div>
-      <%= link_to new_trip_path, class: "btn-admin-menu d-flex flex-row" do %>
+    <% end %>
+    <%= link_to new_trip_path, class: "btn-dashboard d-flex flex-column" do %>
       <span>Add Trip</span>
       <div class="d-flex align-items-center justify-content-center flex-grow-1">
-
-       <i class= "fa-solid fa-list-check fa-2xl" ></i>
+        <i class="fa-solid fa-circle-plus fa-2xl"></i>
       </div>
-      <% end %>
-    </div>
+    <% end %>
+    <%= link_to new_trip_path, class: "btn-dashboard d-flex flex-column" do %>
+      <span>Edit Trip</span>
+      <div class="d-flex align-items-center justify-content-center flex-grow-1">
+        <i class="fa-solid fa-pen fa-2xl"></i>
+      </div>
+    <% end %>
+
  </div>
 
   <div class="row justify-content-center">

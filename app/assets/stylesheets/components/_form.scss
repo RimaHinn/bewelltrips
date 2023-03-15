@@ -85,6 +85,24 @@
     font-weight: 800;
 
   }
+  .btn-dashboard{
+    font-family: 'Montserrat';
+    font-style: bold;
+    font-size: 20;
+    border: 5px outset whitesmoke;
+    background-color: rgb(217, 210, 210);
+    color: #5e5957;
+    border-radius: 10px;
+    font-weight: 800;
+    height:100px;
+    width: 100px;
+    cursor:pointer;
+  }
+   .btn-dashboard:hover {
+    // background-color: lightblue;
+    background-color: white;
+    color: rgb(109, 102, 100);
+ }
 }
 .form-retreat-list {
 
