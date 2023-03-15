@@ -1,2 +1,11 @@
-// Specific CSS for your home-page
+// // Specific CSS for your home-page
+@media(max-width: 768px) {
+  .btn-home {
+    margin-left: 20vw;
+  }
+  .home-container {
+    justify-content: flex-end;
+    position: fixed;
+  }
+}
 

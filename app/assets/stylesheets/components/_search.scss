@@ -3,6 +3,19 @@
   border-radius: 10px;
 }
 
+.search_bar_home {
+  position: relative;
+  top: 31vh;
+}
+
+@media(max-width: 768px) {
+  .search_bar_home {
+    position: relative;
+    top: 34vh;
+    left: 8vw;
+  }
+}
+
 .search_bar_by_category {
   width: 350px;
   border-radius: 10px;

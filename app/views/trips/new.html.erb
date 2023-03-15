@@ -1,10 +1,43 @@
 
 
-<div class="container">
+
+
 
 <div class="form-retreat-manager">
   <h2>Retreat Admin Dashboard</h2>
 </div>
+
+<div class="form-retreat">
+
+    <div>
+      <%= link_to new_trip_path, class: "btn-admin-menu d-flex flex-row" do %>
+        <span>list trips</span>
+        <div class="d-flex align-items-center justify-content-center flex-grow-1">
+          <i class="fa-solid fa-spa fa-2xl"></i>
+        </div>
+      <% end %>
+    </div>
+
+    <div>
+      <%= link_to new_trip_path, class: "btn-admin-menu d-flex flex-row" do %>
+      <span>Edit Trip</span>
+      <div class="d-flex align-items-center justify-content-center flex-grow-1">
+
+       <i class= "fa-solid fa-list-check fa-2xl" ></i>
+      </div>
+      <% end %>
+    </div>
+     <div>
+      <%= link_to new_trip_path, class: "btn-admin-menu d-flex flex-row" do %>
+      <span>Add Trip</span>
+      <div class="d-flex align-items-center justify-content-center flex-grow-1">
+
+       <i class= "fa-solid fa-list-check fa-2xl" ></i>
+      </div>
+      <% end %>
+    </div>
+ </div>
+
   <div class="row justify-content-center">
     <div class="col-12 col-sm-4">
 
