@@ -1,7 +1,37 @@
 .about-page{
 
-  font-family: 'Playfair Display', serif;
+  // font-family: 'Playfair Display', serif;
   // background-image: image-url("cover.svg");
-  font-family: 'Montserrat';
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: calc(100vh - 106px);
+
+  h2 {
+    font-family: 'Montserrat',sans-serif;
+    color:rgb(79, 75, 73);
+    font-size: 20px;
+    font-weight: bold;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: left;
+    background: white ;
+
+  }
+
+  p {
+    font-family: 'Montserrat';
+    color:  #5d5b5a;
+    font-size: 12px;
+
+    margin-bottom: 5px;
+    text-align: left;
+    background:white ;
+  }
 
 }
+
+
+
+
