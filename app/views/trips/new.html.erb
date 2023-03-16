@@ -4,7 +4,7 @@
 
 
 <div class="form-retreat-manager">
-  <h2>Retreat Admin Dashboard</h2>
+  <h2>Plan Your Retreat and View Reports!</h2>
 </div>
 
 <div class="form-retreat-manager justify-content-center  d-flex flex-space-around" >
@@ -25,6 +25,12 @@
       <span>Edit Trip</span>
       <div class="d-flex align-items-center justify-content-center flex-grow-1">
         <i class="fa-solid fa-pen fa-2xl"></i>
+      </div>
+    <% end %>
+     <%= link_to new_trip_path, class: "btn-dashboard d-flex flex-column" do %>
+      <span>Reports</span>
+      <div class="d-flex align-items-center justify-content-center flex-grow-1">
+        <i class="fa-solid fa-chart-line fa-2xl"></i>
       </div>
     <% end %>
 
