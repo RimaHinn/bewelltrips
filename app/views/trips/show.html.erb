@@ -1,33 +1,46 @@
 
+<div class="container">
 
-<div class="image-grid-container">
 
-  <div class="row justify-content-center">
 
-    <% @trip.photos.each do |photo| %>
-        <%= cl_image_tag photo.key,  class:"image-grid-item"%>
-    <% end %>
+<div class="form_book">
+  <div class="d-flex img-grid-wrapper">
+    <div class="trip-img-grid img-grid-big w-50 me-2" style="background-image: url(<%= cl_image_path @trip.photos.first.key %>)"></div>
+    <div class="w-50 img-grid-small">
+      <% @trip.photos.drop(1).each do |photo| %>
+        <div class="trip-img-grid w-100 h-100" style="background-image: url(<%= cl_image_path photo.key %>)"></div>
+      <% end %>
+    </div>
   </div>
 </div>
 
-<div class="retreat-info-container justify-content-left">
-  <h2><%= @trip.name %></h2>
+<div class="form_book">
+
+<div class="form_book">
+  <h1>
+     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-columns-gap" viewBox="0 0 16 16">
+      <path d="M6 1v3H1V1h5zM1 0a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1H1zm14 12v3h-5v-3h5zm-5-1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5zM6 8v7H1V8h5zM1 7a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H1zm14-6v7h-5V1h5zm-5-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1h-5z"/>
+    </svg>
+    <%= @trip.name %>
+  </h1>
 </div>
 
+<div class="form_book">
 <div class="retreat-info-container">
  <p> <i class="fa-solid fa-location-dot"></i> <%= @trip.address %></p>
 </div>
 
+<div class="retreat-info-container">
+ <p><strong>Overview: </strong><br><%= @trip.description %></p>
+</div>
+
+<div class="retreat-info-container">
+ <p> <i class="fa-solid fa-calendar-days"></i> <br>
+ <strong>From: </strong> <%= @trip.start_date%> <strong> <br> To: </strong><%= @trip.end_date%> </p>
+</div>
 <div class="retreat-info-container justify-content-right">
  <h5><%= @trip.categories.join(" | ")%></h5>
 </div>
 
-
-<div class="retreat-info-container">
- <p> <i class="fa-solid fa-calendar-days"></i>
- <strong>From: </strong> <%= @trip.start_date%> <strong>To: </strong><%= @trip.end_date%> </p>
 </div>
-
-<div class="retreat-info-container">
- <p><strong>Overview: </strong><br><%= @trip.description %></p>
 </div>

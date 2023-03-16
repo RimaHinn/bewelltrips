@@ -1,0 +1,13 @@
+
+<div class="form_book">
+  <p><%= @trip.description %></p>
+</div>
+<div class="form_book">
+<h4> € <strong><%= @trip.price%></strong>/day</h4>
+</div>
+<div class="form_book">
+  <%# Form to create a booking - uncomment to unleash! %>
+  <%= render "bookings/form", trip:@eventspace, booking:@booking %>
+</div>
+
+</div>
