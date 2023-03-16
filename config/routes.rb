@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   resources :trips
   get "/destinations", to: "trips#destinations"
   get "/categories", to: "trips#categories"
-  get "/list", to: "trips#list"
+  get "/about", to: "trips#about"
+
 
 end

@@ -1,7 +1,14 @@
 
 <div class="container">
 
-
+<div class="form_book">
+  <h1>
+     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-columns-gap" viewBox="0 0 16 16">
+      <path d="M6 1v3H1V1h5zM1 0a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1H1zm14 12v3h-5v-3h5zm-5-1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5zM6 8v7H1V8h5zM1 7a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H1zm14-6v7h-5V1h5zm-5-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1h-5z"/>
+    </svg>
+    <%= @trip.name %>
+  </h1>
+</div>
 
 <div class="form_book">
   <div class="d-flex img-grid-wrapper">
@@ -16,14 +23,7 @@
 
 <div class="form_book">
 
-<div class="form_book">
-  <h1>
-     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-columns-gap" viewBox="0 0 16 16">
-      <path d="M6 1v3H1V1h5zM1 0a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1H1zm14 12v3h-5v-3h5zm-5-1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5zM6 8v7H1V8h5zM1 7a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H1zm14-6v7h-5V1h5zm-5-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1h-5z"/>
-    </svg>
-    <%= @trip.name %>
-  </h1>
-</div>
+
 
 <div class="form_book">
 <div class="retreat-info-container">
@@ -38,9 +38,28 @@
  <p> <i class="fa-solid fa-calendar-days"></i> <br>
  <strong>From: </strong> <%= @trip.start_date%> <strong> <br> To: </strong><%= @trip.end_date%> </p>
 </div>
+<div class="form_book ">
+  <p> <strong>Deposit Required to Book: </strong>   € <%= @trip.deposit_pricing%></p>
+  <p> <strong> Double Occupancy Pricing </strong> € <%= @trip.double_pricing%></p>
+  <p> <strong> Single Occupancy Pricing </strong>  € <%= @trip.single_pricing%></p>
+</div>
+
 <div class="retreat-info-container justify-content-right">
  <h5><%= @trip.categories.join(" | ")%></h5>
 </div>
 
+
+
 </div>
+
+
+
+<div class="form_book">
+  <%# <%= render "bookings/form", trip:@etrip, booking:@booking %>
+  <button> Book Trip </button>
+  <br>
+  <button> Inquire about trip </button>
+</div>
+
+
 </div>
