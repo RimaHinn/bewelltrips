@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   get "/destinations", to: "trips#destinations"
   get "/categories", to: "trips#categories"
   get "/about", to: "trips#about"
-
+  get "/aboutstory", to: "trips#aboutstory"
+  get "/aboutpast", to: "trips#aboutpast"
+  get "/aboutoffer", to: "trips#aboutoffer"
 
 end
