@@ -270,10 +270,11 @@
 }
 
 .form_book {
-  margin: 10px;
+
   box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
   padding: 15px;
   border-radius: 20px;
+  margin-bottom: 80px;
   h1 {
     font-family: 'Montserrat';
     color:  #494746;
@@ -283,4 +284,79 @@
 
     text-align: left;
   }
+  h2 {
+    font-family: 'Montserrat';
+    color:  #494746;
+    font-size: 20px;
+    font-weight: bold;
+    font-weight: 600;
+
+    text-align: left;
+  }
+  h3 {
+    font-family: 'Montserrat';
+    color:  #494746;
+    font-size: 18px;
+    font-weight: bold;
+    font-weight: 600;
+
+    text-align: left;
+  }
+
+  h4 {
+    font-family: 'Montserrat';
+    color:  #494746;
+    font-size: 14px;
+    font-weight: bold;
+    font-weight: 600;
+    text-align: left;
+    margin-left: 0;
+  }
+  p {
+    font-family: 'Montserrat';
+    color:  #494746;
+    font-size: 14px;
+    font-weight: bold;
+    font-weight: 600;
+    text-align: left;
+  }
+
+  .btn-book {
+    font-family: 'Montserrat';
+    position: center;
+    margin-bottom: 20px;
+    font-family: 'Montserrat';
+    background: #F46D3C;
+    color:#FFFFFF ;
+    border-radius: 1px;
+    font-weight: 800;
+    border: 5px outset coral;
+    border-radius: 10px;
+
+  }
+  .btn-book:hover {
+    // background-color: lightblue;
+    background-color: white;
+    color:#F46D3C;
+ }
+
+}
+
+.btn-create {
+  font-family: 'Montserrat';
+  position: center;
+  margin-bottom: 20px;
+  font-family: 'Montserrat';
+  background: #F46D3C;
+  color:#FFFFFF ;
+  border-radius: 1px;
+  font-weight: 800;
+  border: 5px outset coral;
+  border-radius: 10px;
+
+}
+.btn-create:hover {
+  // background-color: lightblue;
+  background-color: white;
+  color:#F46D3C;
 }

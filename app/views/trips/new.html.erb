@@ -54,7 +54,7 @@
         <%= f.input :categories, label: "Activity Types:", collection: Trip::CATEGORIES, input_html: { multiple: true }, as: :check_boxes %>
         <%= f.input :description, label:"Retreat Description:" %>
         <%= f.input :photos, as: :file, input_html: { multiple: true } %>
-        <%= f.submit "Create Retreat", class: "btn-admin" %>
+        <%= f.submit "Create Retreat", class: "btn-create" %>
      <% end %>
  </div>
     </div>
